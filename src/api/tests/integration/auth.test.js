@@ -14,6 +14,7 @@ const emailProvider = require("../../services/emails/emailProvider");
 const sandbox = sinon.createSandbox();
 
 const fakeOAuthRequest = () =>
+  // eslint-disable-next-line implicit-arrow-linebreak
   Promise.resolve({
     service: "facebook",
     id: "123",
